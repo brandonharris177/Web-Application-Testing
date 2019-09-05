@@ -1,10 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 
-const Display = () => {
+const Display = (props) => {
     
+    const balls = props.passBallsToDisplay;
+    const Strikes = props.passStrikesToDisplay;
+
     return (
         <>
-            <h1>is it working</h1>
+            <h1>Balls: {balls}</h1>
+            <h1>Strikes: {Strikes}</h1>
         </>
     );
 };
