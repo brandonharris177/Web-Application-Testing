@@ -15,16 +15,18 @@ const Dashboard = (props) => {
             // console.log(strikes)
         } else {
             setStrikes(0)
+            setBalls(0)
         }
     }
 
     const ballHander = e => {
         e.preventDefault();
-        if (strikes < 4) {
+        if (balls < 4) {
             setBalls(balls + 1)
             // console.log(balls)
         } else {
             setBalls(0)
+            setStrikes(0)
         }
     }
 
