@@ -24,3 +24,17 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+test('are the buttons there', () => {
+  const { getByText } = render(<App />);
+  getByText("Strike");
+  getByText("Ball");
+  getByText("Foul");
+  getByText("Hit");
+});
+
+test('is the display there', () => {
+  const { getByText } = render(<App />);
+  getByText("Strikes: 0");
+  getByText("Balls: 0");
+});
