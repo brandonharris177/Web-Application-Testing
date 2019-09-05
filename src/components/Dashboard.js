@@ -4,9 +4,9 @@ import Display from './Display';
 export const strikeHandler = currentStrikes => {
     if (currentStrikes < 2) {
         // console.log(strikes)
-        return currentStrikes + 1
+        return currentStrikes + 1;
     } else {
-        return currentStrikes = 0
+        return currentStrikes = 0;
     }
 }
 
