@@ -1,9 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import strikeHandler from './components/Dashboard'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+test('strikeHandler adds one strike', () => {
+  expect(strikeHandler(1)).toBe(2);
+  expect(strikeHandler(3)).toBe(0);
 });
+
